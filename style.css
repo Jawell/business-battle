@@ -1,0 +1,950 @@
+/*-----------------------------------------------------global-----------------------------------------------------*/
+@font-face
+{
+    font-family: "stolz-regular";
+    src: url("font/stolz-regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: "stolz-light";
+    src: url("font/stolz-light.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face
+{
+    font-family: "stolz-book";
+    src: url("font/stolz-light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    z-index: 1;
+}
+/*-----------------------------------------------------header-----------------------------------------------------*/
+header
+{
+    background: url("img/header/man.png") no-repeat center;
+    height: 648px;
+}
+
+#menuItems li
+{
+    font-family: stolz-regular;
+    text-transform: uppercase;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    color: white;
+    margin-top: 32px;
+}
+
+#menuItems li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#menuItems li:not(:first-child)
+{
+    margin-left: 20px;
+}
+
+#logo
+{
+    position: absolute;
+    right: 0;
+    margin-top: 48px;
+}
+
+#background
+{
+    min-width: 960px;
+    background-color: black;
+    z-index: 1;
+}
+
+#word
+{
+    display: block;
+    z-index: 3;
+    margin-top: 136px;
+}
+
+#line
+{
+    margin-top: 255px;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    min-width: 960px;
+    height: 1px;
+    z-index: 0;
+}
+
+#button
+{
+    margin-top: 64px;
+    margin-left: 90px;
+    position: relative;
+    padding: 1px 18px 2px 9px;
+    display: inline-block;
+    background: white;
+}
+
+#link
+{
+    font-family: stolz-light;
+    font-size: 30px;
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+#btnLine
+{
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background-color: black;
+    top: 0;
+    right: 9px;
+}
+
+#datepalce
+{
+    margin-top: 78px;
+    color: white;
+    font-size: 24px;
+}
+
+.beforeDatePlace
+{
+    font-family: stolz-regular;
+}
+
+.afterDatePlace
+{
+    font-family: stolz-light;
+}
+
+/*-----------------------------------------------------about project-----------------------------------------------------*/
+.headerProject
+{
+    min-width: 960px;
+    height: 60px;
+    background: url("img/title.svg") #3e495d;
+    background-size: 55px;
+    background-position-x: 1px;
+    background-position-y: 15px;
+}
+
+.textWrap
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.titleText
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: stolz-light;
+    font-size: 30px;
+    float: right;
+    margin-right: 137px;
+    margin-top: 12px;
+}
+
+#project
+{
+    min-width: 960px;
+}
+
+#projectText
+{
+    background: url("img/project/man.png") center;
+    background-position-y: -10px
+}
+
+.wrapText
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.projectBlock
+{
+    display: block;
+    padding: 11px 0 11px 0;
+}
+
+.blockText
+{
+    position:relative;
+    width: 480px;
+    font-size: 18px;
+    font-family: stolz-book;
+    text-indent: 46px;
+    text-align: justify;
+    color: #525253;
+}
+
+.blockText:before
+{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    border-left: dashed #4a4b4c;
+    border-top: dashed #4a4b4c;
+    border-width: 1px;
+}
+
+.blockText:after
+{
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 20px;
+    height: 20px;
+    border-bottom: dashed #4a4b4c;
+    border-right: dashed #4a4b4c;
+    border-width: 1px;
+}
+
+.one
+{
+    background: rgba(255,255,255,0.5);
+}
+
+.two
+{
+    background: rgba(255,255,255,0.7);
+}
+
+.three
+{
+    background: rgba(255,255,255,0.5);
+}
+
+.four
+{
+    background: rgba(255,255,255,0.7);
+}
+
+.five
+{
+    background: rgba(255,255,255,0.5);
+}
+
+.six
+{
+    background: rgba(255,255,255,0.7);
+}
+
+#two
+{
+    margin-left: 80px;
+}
+
+#three
+{
+    margin-left: 160px;
+}
+
+#four
+{
+    margin-left: 240px;
+}
+
+#five
+{
+    margin-left: 320px;
+}
+
+#six
+{
+    margin-left: 400px;
+}
+
+#projectGraph
+{
+    position: relative;
+    min-height: 895px;
+}
+
+.petal
+{
+    position: absolute;
+}
+
+#petal-center
+{
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -222px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-center-id
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -105px;
+    margin-top: -110px;
+    color: white;
+}
+
+.petal-text-center
+{
+    font-family: stolz-regular;
+    font-size: 22px;
+    text-align: center;
+}
+
+#petal-bottom
+{
+    background: url("img/project/petal-bottom.png") center no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: 115px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-bottom
+{
+    margin-top: 85px;
+}
+
+#petal-right-bottom
+{
+    background: url("img/project/petal-right-bottom.png") center no-repeat;
+    -webkit-transform: rotate(-0.5grad);
+    transform: rotate(0.8grad);
+    left: 50%;
+    top: 50%;
+    margin-top: -85px;
+    margin-left: 125px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-right-bottom
+{
+    margin-top: 105px;
+}
+
+#petal-left-bottom
+{
+    background: url("img/project/petal-left-bottom.png") center no-repeat;
+    -webkit-transform: rotate(-0.5grad);
+    transform: rotate(-0.5grad);
+    left: 50%;
+    top: 50%;
+    margin-top: -85px;
+    margin-left: -445px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-left-bottom
+{
+    margin-top: 110px;
+}
+
+#petal-right-top
+{
+    background: url("img/project/petal-right-top.png") center no-repeat;
+    -webkit-transform: rotate(0.5grad);
+    transform: rotate(0.5grad);
+    left: 50%;
+    top: 50%;
+    margin-top: -425px;
+    margin-left: 15px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-right-top
+{
+    margin-top: 85px;
+}
+
+#petal-left-top
+{
+    background: url("img/project/petal-left-top.png") center no-repeat;
+    -webkit-transform: rotate(-0.5grad);
+    transform: rotate(-0.5grad);
+    left: 50%;
+    top: 50%;
+    margin-top: -425px;
+    margin-left: -335px;
+    width: 320px;
+    height: 315px;
+}
+
+#petal-text-left-top
+{
+    margin-top: 110px;
+}
+
+.petal_text
+{
+    font-family: stolz-light;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------about org-----------------------------------------------------*/
+
+#aboutUs
+{
+    min-width: 960px;
+    background: #3a3b40;
+}
+
+#about
+{
+    padding-top: 75px;
+    min-height: 900px;
+}
+
+#sqbg
+{
+    z-index: 3;
+}
+
+.square
+{
+
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    left: 30px;
+}
+
+#aboutText
+{
+    top: 110px;
+    left: 80px;
+    width: 380px;
+    font-family: stolz-light;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    text-align: justify;
+}
+
+#frame1
+{
+    -ms-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+#frame2
+{
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+#bestlogo
+{
+    position: absolute;
+    width: 256px;
+    height: 130px;
+    margin-left: 55px;
+    margin-top: 45px;
+}
+
+#map
+{
+    position: absolute;
+    right: 10px;
+    bottom: -360px;
+}
+
+#anotherProject
+{
+    font-family: stolz-light;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 438px;
+}
+
+#whiteLine
+{
+    text-align: center;
+    background: #e2e2e3;
+}
+
+#whiteLine img
+{
+    width: 220px;
+    height: 110px;
+}
+
+#whiteLine img:last-child
+{
+    margin-left: 100px;
+}
+
+#defLine
+{
+    text-align: center;
+}
+
+#defLine img
+{
+    width: 220px;
+    height: 110px;
+}
+
+#defLine img:last-child
+{
+    margin-left: 100px;
+}
+
+/*-----------------------------------------------------TEAM-----------------------------------------------------*/
+#team
+{
+    position: relative;
+    height: 600px;
+}
+
+#teamLine
+{
+    position: absolute;
+    top: 224px;
+    height: 115px;
+    min-width: 960px;
+    width: 100%;
+    background: #d8d8d9;
+}
+
+.fixWrap
+{
+    height: 100%;
+}
+
+.photo
+{
+    z-index: 3;
+    margin-bottom: -5px;
+}
+
+.action
+{
+    z-index: 3;
+    position: absolute;
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: inline-block;
+    background: black;
+}
+
+#lower-line
+{
+    position: absolute;
+    left: 50%;
+    margin-left: -438px;
+    top: 50%;
+    margin-top: -38px;
+}
+
+#lower-line div
+{
+    display: inline-block;
+}
+
+#photo-group-two
+{
+    margin-left: 96px;
+}
+
+.name
+{
+    opacity: 0;
+    font-family: stolz-light;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    cursor: default;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.lline
+{
+    margin-top: 12px;
+}
+
+#ann
+{
+    left: 50%;
+    margin-left: -321px;
+    top: 50%;
+    margin-top: -153px;
+}
+
+#des
+{
+    margin-left: -66px;
+    margin-top: -28px;
+}
+
+#desline:before
+{
+    width: 105px;
+    left: 13px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#lo
+{
+    left: 50%;
+    margin-left: -86px;
+    top: 50%;
+    margin-top: -162px;
+}
+
+#mo
+{
+    margin-left: -80px;
+    margin-top: -28px;
+}
+
+#moline:before
+{
+    width: 105px;
+    left: 28px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#ksu
+{
+    left: 50%;
+    margin-left: 167px;
+    top: 50%;
+    margin-top: -153px;
+}
+
+#mentor
+{
+    margin-left: -66px;
+    margin-top: -28px;
+}
+
+#mline:before
+{
+    width: 105px;
+    left: 16px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#sasha
+{
+    position: static;
+}
+
+#fr
+{
+    margin-left: -70px;
+    margin-top: -25px;
+}
+
+#frline:before
+{
+    width: 105px;
+    left: 16px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#nana
+{
+    position: static;
+    margin-left: 74px;
+}
+
+#hr
+{
+    margin-left: -70px;
+    margin-top: -28px;
+}
+
+#hrline:before
+{
+    width: 105px;
+    left: 10px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#kris
+{
+    position: static;
+}
+
+#pr
+{
+    margin-left: -66px;
+    margin-top: -25px;
+}
+
+#prline:before
+{
+    width: 105px;
+    left: 10px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+
+#vlada
+{
+    position: static;
+    margin-left: 74px;
+}
+
+#topic
+{
+    margin-left: -76px;
+    margin-top: -28px;
+}
+
+#tline:before
+{
+    width: 105px;
+    left: 20px;
+    top: 24px;
+    content: "";
+    position: absolute;
+    border-top: solid white;
+    border-width: 2px;
+}
+/*-----------------------------------------------------PARTNERS-----------------------------------------------------*/
+#partners
+{
+    position: relative;
+}
+
+#tpartners
+{
+    margin: 115px auto 0;
+    width: 660px;
+    height: 363px;
+}
+
+.partner
+{
+    width: 180px;
+    height: 92px;
+}
+
+#goTop
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -550px;
+    cursor: pointer;
+}
+/*-----------------------------------------------------FOOTER-----------------------------------------------------*/
+#main
+{
+    position: absolute;
+}
+
+#poly
+{
+    -moz-transform: scale(1,-1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    transform: scale(1, -1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+#upper-footer
+{
+    margin-top: 65px;
+    min-width: 960px;
+}
+
+#lower-footer
+{
+    margin-top: -5px;
+    min-width: 960px;
+    width: 100%;
+    height: 232px;
+    background: url("img/footer.svg");
+    background-size: 60px;
+    background-position-x: -59px;
+    background-position-y: 1px;
+}
+
+#side-left
+{
+    display: inline-block;
+    color: white;
+    margin-right: 29px;
+}
+
+#side-right
+{
+    display: inline-block;
+    border-left: solid white 2px;
+    color: white;
+    padding-left: 29px;
+}
+
+#contacts
+{
+    font-family: stolz-light;
+    font-size: 24px;
+}
+
+.beforeFooterDataPlace
+{
+    font-family: stolz-regular;
+    font-size: 18px;
+}
+
+.afterFooterDatePlace
+{
+    font-family: stolz-light;
+    font-size: 18px;
+}
+
+#secondData
+{
+    margin-top: 11px;
+}
+
+#social img
+{
+    margin-top: 46px;
+    margin-bottom: -6px;
+    width: 48px;
+    height: 48px;
+}
+
+#social img:not(:first-child)
+{
+    margin-left: 5px;
+}
+
+#lower-left
+{
+    display: inline-block;
+    margin-top: 34px;
+}
+
+#lower-right
+{
+    display: inline-block;
+    margin-top: 34px;
+    margin-left: 15px;
+}
+
+#lower-left img
+{
+    width: 24px;
+    height: 24px;
+    margin-bottom: -6px;
+    margin-right: 6px;
+}
+
+#lower-right img
+{
+    width: 24px;
+    height: 24px;
+    margin-bottom: -6px;
+    margin-right: 6px;
+}
+
+.position
+{
+    font-family: stolz-regular;
+    font-size: 18px;
+}
+
+.pname
+{
+    font-family: stolz-light;
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.phone
+{
+    font-family: stolz-light;
+    font-size: 18px;
+    margin-top: 42px;
+}
+
+.email
+{
+    font-family: stolz-light;
+    font-size: 18px;
+    margin-top: 6px;
+}

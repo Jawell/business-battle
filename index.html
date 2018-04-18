@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Business Battle</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/team.js"></script>
+</head>
+<body id="start">
+    <div id="background">
+        <div id="line"></div>
+        <div class="wrapper">
+            <header>
+                <img id="logo" src="img/header/logo.png">
+                <nav id="menu">
+                    <ul id="menuItems">
+                        <li><a href="#project">о проекте</a></li>
+                        <li><a href="#aboutUs">об организаторах</a></li>
+                        <li><a href="#team">команда</a></li>
+                        <li><a href="#partners">партнеры</a></li>
+                        <li><a href="#end">контакты</a></li>
+                    </ul>
+                </nav>
+                <img src="img/header/fight.png" id="word">
+                <div id="button">
+                    <a href="#" id="link">
+                        регистрация
+                    </a>
+                    <div id="btnLine"></div>
+                </div>
+                <div id="datepalce">
+                    <p class="beforeDatePlace">#When:&nbsp;&nbsp;&nbsp;&nbsp;<span class="afterDatePlace">18 мая</span></p>
+                    <p class="beforeDatePlace">#Where:&nbsp;&nbsp;&nbsp;<span class="afterDatePlace">Zaporizhzhya</span></p>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="headerProject">
+        <div class="textWrap">
+            <span class="titleText">о проекте</span>
+        </div>
+    </div>
+    <section id="project">
+        <div id="projectText">
+            <div class="projectBlock one">
+                <div class="wrapText" >
+                    <div id="one" class="blockText">
+                        Business Battle — это уникальное экономическое соревнование между университетами Запорожья.
+                    </div>
+                </div>
+            </div>
+            <div class="projectBlock two">
+                <div class="wrapText">
+                    <div id="two" class="blockText">
+                        Проект Business Battle является симуляцией процесса переговоров, моделирует деятельность производственной компании.
+                    </div>
+                </div>
+            </div>
+            <div class="projectBlock three">
+                <div class="wrapText">
+                    <div id="three" class="blockText">
+                        Участники получают возможность не только стать владельцем своей виртуальной компании, получить новые компетенции, но и приобрести бесценный опыт, советы от ведущих бизнесменов, предпринимателей, стартаперов и людей, достигших высоких вершин в экономической деятельности.
+                    </div>
+                </div>
+            </div>
+            <div class="projectBlock four">
+                <div class="wrapText" >
+                    <div id="four" class="blockText">
+                        Игра позволяет участникам улучшить свои знания и навыки в условиях, близких к реальным.
+                    </div>
+                </div>
+            </div>
+            <div class="projectBlock five">
+                <div class="wrapText" >
+                    <div id="five" class="blockText">
+                        Основной обучающий фактор — решения и действия самих участников: инвестиции, ценообразование, переговоры, конкуренция, розница, финансы, производители, дистрибьюторы, планы производства и продаж.
+                    </div>
+                </div>
+            </div>
+            <div class="projectBlock six">
+                <div class="wrapText" >
+                    <div id="six" class="blockText">
+                        Ограничение во времени приводит к максимальному использованию и развитию бизнес-навыков.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projectGraph">
+            <div>
+                <svg class="petal" id="petal-center" viewBox="0 0 5 5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <pattern id="pat" patternUnits="userSpaceOnUse" viewBox="1 0 4 10" width="0.90" height="1.5px">
+                            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mN09I7/z0AEYBxVSF+FAKwvEy/2pgcfAAAAAElFTkSuQmCC"></image>
+                            <polygon class="cls-1" points="2,0 -0.3,1" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="4,0 6.3,1" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="2,10 -0.3,9" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="4,10 6.3,9" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="2.5,1 0.5,2 0.5,4 2.5,3" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="3.5,1 3.5,3 5.5,4 5.5,2" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="3,4 1,5 3,6 5,5" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="0.5,6 0.5,8 2.5,9 2.5,7" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                            <polygon class="cls-1" points="3.5,7 3.5,9 5.5,8 5.5,6" style="fill:#414b5f;stroke:#555e70;stroke-width:0.2"></polygon>
+                        </pattern>
+                    </defs>
+                    <polygon points="1,0.01 0,3 2.5,4.875 5,3 4,0.01" fill="url(#pat)" stroke="#434d61" stroke-width="0.02" transform="rotate(180 2.5 2.5)"></polygon>
+                </svg>
+                <div id="petal-text-center-id"><p class="petal-text-center">Business Battle –</p><p class="petal-text-center">уникальный шанс</p><p class="petal-text-center">для студентов</p><p class="petal-text-center">экономических</p><p class="petal-text-center">специальностей:</p></div>
+            </div>
+            <div class="petal" id="petal-bottom"><div id="petal-text-bottom"><p class="petal_text">усовершенствовать</p><p class="petal_text">навыки работы в команде,</p><p class="petal_text">в условиях ограниченного</p><p class="petal_text">времени</p></div></div>
+            <div class="petal" id="petal-right-bottom"><div id="petal-text-right-bottom"><p class="petal_text">применить мастерство</p><p class="petal_text">ведения переговоров и</p><p class="petal_text">поиска компромисса</p></div></div>
+            <div class="petal" id="petal-left-bottom"><div id="petal-text-left-bottom"><p class="petal_text">разработать стратегию</p><p class="petal_text">переговоров</p></div></div>
+            <div class="petal" id="petal-right-top"><div id="petal-text-right-top"><p class="petal_text">бросить вызов своим</p><p class="petal_text">знаниям финансового</p><p class="petal_text">анализа и оценки</p><p class="petal_text">стоимости бизнеса</p></div></div>
+            <div class="petal" id="petal-left-top"><div id="petal-text-left-top"><p class="petal_text">научится работать</p><p class="petal_text">в команде</p></div></div>
+        </div>
+    </section>
+    <div class="headerProject">
+        <div class="textWrap">
+            <span class="titleText">об организаторах</span>
+        </div>
+    </div>
+    <section id="aboutUs">
+        <div id="about">
+            <div class="wrapper">
+                <div id="aboutFrame">
+                    <svg class="square" id="frame1" width="463px" height="463px">
+                        <rect x="5" y="5" width="456px" height="456px" fill="none" stroke="white" stroke-width="0.2"></rect>
+                    </svg>
+                    <svg class="square" id="frame2" width="463px" height="463px">
+                        <rect x="5" y="5" width="456px" height="456px" fill="none" stroke="white" stroke-width="0.2"></rect>
+                    </svg>
+                    <div id="aboutText">
+                        &nbsp;&nbsp;&nbsp;&nbsp;BEST (Board of European Students of Technology) - Совет студентов технических вузов Европы - наибольшая международная студенческая организация Европы, которая с 1989 года занимается предоставлением студентам дополнительного образования и карьерных  возможностей. BEST обеспечивает качественное взаимодействие между студентами, компаниями и университетами, а также дает отличную возможность студентам для самореализации.
+                    </div>
+                    <img id="sqbg" src="img/about/sqbg.png">
+                    <img src="img/about/best.svg" id="bestlogo">
+                    <img src="img/about/map.png" id="map">
+                </div>
+            </div>
+            <p id="anotherProject">наши другие проекты</p>
+            <div id="whiteLine">
+                <img src="img/another/EBEC.svg">
+                <img src="img/another/JOBFAIR.svg">
+            </div>
+            <div id="defLine">
+                <img src="img/another/COURSE.svg">
+                <img src="img/another/LT.svg">
+            </div>
+        </div>
+    </section>
+    <div class="headerProject">
+        <div class="textWrap">
+            <span class="titleText">команда</span>
+        </div>
+    </div>
+    <section id="team">
+        <div id="teamLine"></div>
+        <div class="wrapper fixWrap">
+            <div id="upper-line" class="romb">
+                <div class="action" id="ann"><div class="back"><img class="photo" src="img/team/ann.png"></div><div class="name" id="des"><p id="desline">Designer</p><p class="lline">Anna Podakova</p></div></div>
+                <div class="action" id="lo"><div class="back"><img class="photo" src="img/team/lo.png"></div><div class="name" id="mo"><p id="moline">Main Organizer</p><p class="lline">Alexandr Lobachev</p></div></div>
+                <div class="action" id="ksu"><div class="back"><img class="photo" src="img/team/ksu.png"></div><div class="name" id="mentor"><p id="mline">Topic, Mentor</p><p class="lline">Ksenia Nalivayko</p></div></div>
+            </div>
+            <div id="lower-line" class="romb">
+                <div id="photo-group-one">
+                    <div class="action" id="sasha"><div class="back"><img class="photo" src="img/team/sasha.png"></div><div class="name" id="fr"><p id="frline">FR-responsible</p><p class="lline">Alexandr Gavrish</p></div></div>
+                    <div class="action" id="nana"><div class="back"><img class="photo" src="img/team/nana.png"></div><div class="name" id="hr"><p id="hrline">HR-responsible</p><div class="lline"><p>Anastasia</p><p>Maximovskaya</p></div></div></div>
+                </div>
+                <div id="photo-group-two">
+                    <div class="action" id="kris"><div class="back"><img class="photo" src="img/team/kris.png"></div><div class="name" id="pr"><p id="prline">PR-responsible</p><p class="lline">Kristina Kurmel</p></div></div>
+                    <div class="action" id="vlada"><div class="back"><img class="photo" src="img/team/vlada.png"></div><div class="name" id="topic"><p id="tline">Topic</p><p class="lline">Vladislava Saydan</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="headerProject">
+        <div class="textWrap">
+            <span class="titleText">партнеры</span>
+        </div>
+    </div>
+    <section id="partners">
+        <a href="#start" id="goTop"><img src="img/partners/arrow.svg"></a>
+        <div class="wrapper">
+            <table id="tpartners">
+                <tbody>
+                    <tr>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                        <td><img class="partner" src="img/partners/EBEC.svg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer id="end">
+        <div id="upper-footer">
+            <svg id="poly" width="100%" height="160px">
+                <clipPath id="first-layer" clipPathUnits="objectBoundingBox">
+                    <polygon points="0,0 0,0.5875 0.1998,0.85625 0.2869,0.54375 0.3828,0.7875 0.4926,0.575 0.6098,0.675 0.7166,0.8687 0.7628,0.7187 0.8001,0.825 1,0.7125 1,0"<!--построить как для 1366px, по пропорции найти где эта точка от 0 до 1-->
+                    style="fill: black; stroke:#000000" stroke-width="0.1"></polygon>
+                </clipPath>
+                <clipPath id="second-layer" clipPathUnits="objectBoundingBox">
+                    <polygon points="0,0.08125 0,0.3562 0.09224,0.8125 0.2474,0.6625 0.3440,0.7812 0.3901,0.6375 0.53,0.75 0.6098,0.525 0.8360,0.4625 0.8323,0.75 0.9399,0.8437 1,0.9937 1,0.325 0.6171,0"
+                             style="fill:#3a3b40; stroke:#3a3b40" stroke-width="0.1"></polygon>
+                </clipPath>
+                <clipPath id="third-layer" clipPathUnits="objectBoundingBox">
+                    <polyline points="0,0.5075 0.1998,0.77625 0.2869,0.45375 0.3828,0.7075 0.4926,0.495 0.6098,0.595 0.7166,0.7887 0.7628,0.6387 0.8001,0.745 1,0.6325 1,0.6225 0.8001,0.735 0.7628,0.6287 0.7166,0.7787 0.6098,0.585 0.4926,0.485 0.3828,0.6975 0.2869,0.44375 0.1998,0.76625 0,0.4975"></polyline>
+                </clipPath>
+                <pattern id="blackPattern" viewBox="1 0 4 10" width="60px" height="100px" patternUnits="userSpaceOnUse">
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAEUlEQVR42mNk+M+AARiHsiAAcCIKAYwFoQ8AAAAASUVORK5CYII="></image>
+                    <polygon points="2,0 -0.3,1" style="fill:#000000;stroke:#ffffff;stroke-width:0.005"></polygon>
+                    <polygon points="4,0 6.3,1" style="fill:#000000;stroke:#ffffff;stroke-width:0.005"></polygon>
+                    <polygon points="2,10 -0.3,9" style="fill:#000000;stroke:#ffffff;stroke-width:0.005"></polygon>
+                    <polygon points="4,10 6.3,9" style="fill:#000000;stroke:#ffffff;stroke-width:0.005"></polygon>
+                    <polygon points="2.5,1 0.5,2 0.5,4 2.5,3" style="fill:#000000;stroke:#ffffff;stroke-width:0.01"></polygon>
+                    <polygon points="3.5,1 3.5,3 5.5,4 5.5,2" style="fill:#000000;stroke:#ffffff;stroke-width:0.01"></polygon>
+                    <polygon points="3,4 1,5 3,6 5,5" style="fill:#000000;stroke:#ffffff;stroke-width:0.01"></polygon>
+                    <polygon points="0.5,6 0.5,8 2.5,9 2.5,7" style="fill:#000000;stroke:#ffffff;stroke-width:0.01"></polygon>
+                    <polygon points="3.5,7 3.5,9 5.5,8 5.5,6" style="fill:#000000;stroke:#ffffff;stroke-width:0.01"></polygon>
+                </pattern>
+                <rect width="100%" height="100%" clip-path="url(#second-layer)" fill="#3a3b40"></rect>
+                <rect width="100%" height="100%" clip-path="url(#first-layer)" fill="url(#blackPattern)"></rect>
+                <rect width="100%" height="100%" clip-path="url(#third-layer)" fill="none" style="stroke:white;stroke-width:160px"></rect>
+            </svg>
+        </div>
+        <div id="lower-footer">
+            <div class="wrapper">
+                <div id="side-left">
+                    <p class="beforeFooterDataPlace" id="firstData">#When:&nbsp;&nbsp;&nbsp;&nbsp;<span class="afterFooterDatePlace">18 мая</span></p>
+                    <p class="beforeFooterDataPlace" id="secondData">#Where:&nbsp;&nbsp;&nbsp;<span class="afterFooterDatePlace">Zaporizhzhya</span></p>
+                    <div id="social">
+                        <a href="https://vk.com/best_zntu"><img src="img/footer/vk.svg"></a>
+                        <a href="https://www.instagram.com/best_zaporizhzhya/"><img src="img/footer/inst.svg"></a>
+                        <a href="https://fb.com/BEST.Zaporizhzhya/"><img src="img/footer/fb.svg"></a>
+                        <a href="https://www.linkedin.com/company/335305/"><img src="img/footer/in.svg"></a>
+                        <a href="mailto:localgroup@best-zp.org.ua"><img src="img/footer/a.svg"></a>
+                    </div>
+                </div>
+                <div id="side-right">
+                    <div id="upper-right">
+                        <p id="contacts">Contacts:</p>
+                    </div>
+                    <div id="lower-left">
+                        <p class="position">Главный организатор</p>
+                        <p class="pname">Александр Лобачев</p>
+                        <p class="phone"><img src="img/footer/phone.svg">+380 95 587 53 33</p>
+                        <p class="email"><img src="img/footer/email.svg">alexandr.lobachyov@best.eu.org</p>
+                    </div>
+                    <div id="lower-right">
+                        <p class="position">Корпоративные связи</p>
+                        <p class="pname">Александр Гавришь</p>
+                        <p class="phone"><img src="img/footer/phone.svg">+380 97 840 87 82</p>
+                        <p class="email"><img src="img/footer/email.svg">alex.gavrish@best.eu.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
