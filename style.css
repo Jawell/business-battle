@@ -179,7 +179,7 @@ header
 
 #projectText
 {
-    background: url("img/project/man.png") center;
+    background: url("img/project/man.png") center no-repeat;
     background-position-y: -10px
 }
 
@@ -832,7 +832,7 @@ header
 
 #lower-footer
 {
-    margin-top: -5px;
+    margin-top: -0.6vh;
     min-width: 960px;
     width: 100%;
     height: 232px;
@@ -890,7 +890,7 @@ header
 
 #social img:not(:first-child)
 {
-    margin-left: 5px;
+    margin-left: -5px;
 }
 
 #lower-left
